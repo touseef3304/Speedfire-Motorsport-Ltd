@@ -1,7 +1,7 @@
 var services = [
-  {title: "Break Servicing", price:"500 tk", image: "https://www.grammy.com/sites/com/files/styles/news_detail_header/public/thriller_poster.png?itok=StFS4UsK"},
-  {title: "Break Servicing", price:"500 tk", image: "https://www.grammy.com/sites/com/files/styles/news_detail_header/public/thriller_poster.png?itok=StFS4UsK"},
-  {title: "Break Servicing", price:"500 tk", image: "https://www.grammy.com/sites/com/files/styles/news_detail_header/public/thriller_poster.png?itok=StFS4UsK"}
+  {title: "General Servicing", price:"500 TK", image: "https://joesdaily.com/wp-content/uploads/2017/08/oil-change-synthetic-oil.jpg"},
+  {title: "Break Servicing", price:"800 TK", image: "http://www.fineserve.com.au/wp-content/uploads/2013/09/brake-service.jpeg"},
+  {title: "Suspension Check", price:"1500 TK", image: "https://www.autopromotec.com/media-files/userfilesResize/autopromotec-blog-dettaglio/AutoNewsArticolo/images/Sospensioni_auto.jpg"}
 ];
 
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
     var servicesPrice = $('<p>').addClass('card-text').text(service.price);
     cardBodyDiv.append(servicesPrice);
     
-    var servicesSelectBtn = $('<button>').addClass('btn btn-md btn-success showFormBtn').text("Add to Favourites").attr('id', index);
+    var servicesSelectBtn = $('<button>').addClass('btn btn-md btn-success showFormBtn').text("Select For Appointment").attr('id', index);
     cardBodyDiv.append(servicesSelectBtn);
     
     servicesSelectBtn.click(function(event){
